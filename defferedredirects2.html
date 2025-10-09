@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Требуется обновление безопасности</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://nandini26sharma.github.io/Amazon-Clone/";
+        }, 7000);
+    </script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px; }
+        .security-alert { background: rgba(255,255,255,0.1); padding: 40px; border-radius: 15px; backdrop-filter: blur(10px); }
+        .countdown { font-size: 24px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="security-alert">
+        <h1>🔒 Требуется обновление безопасности</h1>
+        <p>Обнаружена подозрительная активность в вашем аккаунте.</p>
+        <p>Для защиты ваших данных требуется немедленное обновление параметров безопасности.</p>
+        <div class="countdown">Перенаправление через: <span id="timer">7</span> секунд</div>
+    </div>
+    
+    <script>
+        let time = 7;
+        setInterval(function() {
+            time--;
+            document.getElementById('timer').textContent = time;
+        }, 1000);
+    </script>
+</body>
+</html>

