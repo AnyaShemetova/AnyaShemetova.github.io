@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Требуется обновление данных</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f5f5f5; }
+        .container { max-width: 400px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .qr-code { max-width: 100%; margin: 20px 0; }
+        .database { color: #00796b; background: #e0f2f1; padding: 15px; border-radius: 5px; }
+        .progress { background: #00796b; height: 4px; border-radius: 2px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🗃️ Обновление базы данных</h2>
+        <div class="database">
+            <strong>Критическое обновление</strong><br>
+            Версия 3.2.1 → 4.0.0
+        </div>
+        <div class="progress"></div>
+        <p>Отсканируйте QR-код для установки обновления</p>
+        
+        <img src="images/qr25.png" alt="QR код" class="qr-code">
+        
+        <p><small>Время установки: ~2 минуты</small></p>
+    </div>
+</body>
+</html>

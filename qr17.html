@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша карта заблокирована</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #ffebee; }
+        .container { max-width: 400px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .qr-code { max-width: 100%; margin: 20px 0; }
+        .alert { color: #c62828; background: #ffebee; padding: 15px; border-radius: 5px; border: 1px solid #c62828; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚫 Карта заблокирована</h2>
+        <div class="alert">
+            <strong>Обнаружена подозрительная операция</strong><br>
+            Карта *** 4581 временно заблокирована
+        </div>
+        <p>Отсканируйте QR-код для разблокировки</p>
+        
+        <img src="images/qr17.png" alt="QR код" class="qr-code">
+        
+        <p><small>Служба безопасности банка</small></p>
+    </div>
+</body>
+</html>

